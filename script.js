@@ -38,3 +38,9 @@ function calcularCambio() {
         document.getElementById('soles').value = "S/ 0.00";
     }
 }
+function redireccionarWhatsApp() {
+    const telefono = "51923539682"; // Reemplaza con el número de WhatsApp de la empresa
+    const mensaje = "Hola, quiero hacer una consulta sobre el cambio de divisas."; // Puedes personalizar este mensaje
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+}
