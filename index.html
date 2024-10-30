@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de Cambio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <div class="logo-frase">
+            <img src="LOGO.png" alt="Logo de la Empresa" class="logo">
+            <h1>¡Cambia tus dolares y soles!</h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="cambio-container">
+        <h2>Precio del dólar hoy en Perú</h2>
+        <p class="subtitulo">Cotiza el precio del dólar aquí</p>
+
+        <!-- Cuadro de cambio -->
+        <div class="cambio-cuadro">
+            <!-- Selector de Compra/Venta -->
+            <div class="selector-compra-venta">
+                <button id="btn-compra" onclick="seleccionarOperacion('compra')" class="activo">Compra: 3.76</button>
+                <button id="btn-venta" onclick="seleccionarOperacion('venta')">Venta: 3.78</button>
+            </div>
+
+            <h3>Cambia ahora</h3>
+
+            <!-- Campo para ingresar dólares -->
+            <div class="campo-cambio">
+                <label for="dolares">MONTO</label>
+                <div class="input-group">
+                    <span class="moneda-simbolo">$</span>
+                    <input type="number" id="dolares" placeholder="500.00" oninput="calcularCambio()">
+                    <span class="bandera">🇺🇸</span>
+                </div>
+            </div>
+
+            <!-- Campo para mostrar soles -->
+            <div class="campo-cambio">
+                <label for="soles">RESULTADO</label>
+                <div class="input-group">
+                    <span class="moneda-simbolo">S/</span>
+                    <input type="text" id="soles" placeholder="0.00" readonly>
+                    <span class="bandera">🇵🇪</span>
+                </div>
+            </div>
+
+            <!-- Opciones adicionales -->
+            <div class="opciones-extra">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+
+            <!-- Botón para iniciar operación -->
+            <button class="btn-operacion">Iniciar operación</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p>Contacto: casadecambiocachiclayo@gmail.com | Tel: +51 923539682 - 974410197</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> 
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>© 2024 Casa de Cambio CA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

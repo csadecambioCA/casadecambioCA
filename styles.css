@@ -1,0 +1,192 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #f4f7fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #AD2028;
+    color: #FEED17;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo-frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    max-width: 60px;
+    height: auto;
+}
+
+.logo-frase h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.cambio-container {
+    text-align: center;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+.cambio-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #5a5a5a;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+/* Cuadro de cambio */
+.cambio-cuadro {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
+
+/* Selector de Compra/Venta */
+.selector-compra-venta {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.selector-compra-venta button {
+    background-color: #e0e7ff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.selector-compra-venta button.activo {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+/* Campo de cambio */
+.campo-cambio {
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #5a5a5a;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f9f9f9;
+}
+
+.moneda-simbolo {
+    font-size: 1.1em;
+    margin-right: 5px;
+    color: #333;
+}
+
+.bandera {
+    margin-left: auto;
+    font-size: 1.2em;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background: none;
+    font-size: 1em;
+}
+
+/* Opciones extra */
+.opciones-extra {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.opciones-extra a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botón de operación */
+.btn-operacion {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-operacion:hover {
+    background-color: #e6b800;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #26306D;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.pie-pagina p {
+    margin: 5px 0;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
